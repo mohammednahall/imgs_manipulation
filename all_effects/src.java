@@ -309,7 +309,7 @@ public class JavaApplication1 {
         // nested for loop to loop in each pixel in the image
         for (int y = 0; y < height; y++) {
             
-            int Y = (height - y) - height / 2;
+            int Y = y - height / 2;
             if (Y < -r || Y > r) {
                 
                 for (int x = 0; x < width; x++) {
