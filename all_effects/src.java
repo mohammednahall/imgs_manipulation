@@ -45,7 +45,7 @@ public class JavaApplication1 {
         String name = in.nextLine();
         
         // end the name with .jpg
-        if (!name.endsWith(".jpg") && !name.endsWith(".png")) {
+        if (!name.endsWith(".jpg")) {
             name += ".jpg";
         }
 
