@@ -95,6 +95,7 @@ public class JavaApplication1 {
 
     }
     
+    //contrast effect
     private static void contrast(double amount){
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -158,7 +159,8 @@ public class JavaApplication1 {
             }
         }
     }
-        
+    
+    //brightness effect
     private static void brightness(double amount){
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -168,7 +170,7 @@ public class JavaApplication1 {
                 int g = (p >> 8) & 0xff;
                 int b = p & 0xff;
 
-                ////increase the rgb value of each pixel
+                //increase the rgb value of each pixel
                 r += amount*r;
                 if(r>255)r = 255;
                 g += amount*g;
@@ -181,6 +183,7 @@ public class JavaApplication1 {
         }
     }
 
+    //sunse effect
     private static void sunsetEffect(double amount) {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -202,6 +205,7 @@ public class JavaApplication1 {
         }
     }
 
+    //winter effect
     private static void winterEffect(double amount) {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -223,6 +227,7 @@ public class JavaApplication1 {
         }
     }
 
+    //tellscop effect
     private static void tellscopEffect(int r) {
         for (int y = 0; y < height; y++) {
             int Y = (height - y) - height / 2;
@@ -241,23 +246,9 @@ public class JavaApplication1 {
                 }
             }
         }
-        /*for (int y = 0; y < height; y++) {
-            int Y = y - (int) (0.5 * height);
-            if (Y < -r * width || Y > r * width) {
-                for (int x = 0; x < width; x++) {
-                    img.setRGB(x, y, (255 << 24) | (0 << 16) | (0 << 8) | 0);
-                }
-            }
-            for (int x = 0; x < width; x++) {
-                int X = x - width / 2;
-                if (X < -Math.sqrt((r * width) * (r * width) - Y * Y)
-                        || X > Math.sqrt((r * width) * (r * width) - Y * Y)) {
-                    img.setRGB(x, y, (255 << 24) | (0 << 16) | (0 << 8) | 0);
-                }
-            }
-        }*/
     }
     
+    //black and white effect
     private static void BWeffect() {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -274,6 +265,7 @@ public class JavaApplication1 {
         }
     }
 
+    //negative effect
     private static void negativeEffect() {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
@@ -287,7 +279,8 @@ public class JavaApplication1 {
             }
         }
     }
-   
+    
+    //rgb effect
     private static void rgbEffect(){
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
