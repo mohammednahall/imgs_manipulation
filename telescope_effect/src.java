@@ -40,7 +40,7 @@ public class telescope_effect {
         System.out.println("=> "+r+"px");
         
         for (int y = 0; y < height; y++) {
-            int Y = (height - y) - height / 2;
+            int Y = y - height / 2;
             if (Y < -r || Y > r) {
                 for (int x = 0; x < width; x++) {
                     img.setRGB(x, y, (255 << 24) | (0 << 16) | (0 << 8) | 0);
