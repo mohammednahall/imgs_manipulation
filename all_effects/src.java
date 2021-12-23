@@ -19,7 +19,7 @@ public class JavaApplication1 {
     // create an object from File class
     static File f = null;
     
-    // initialize the width and height int variables
+    // declaration the width and height int variables
     static int width = 0, height = 0;
 
     public static void main(String[] args) {
