@@ -16,7 +16,7 @@ public class telescope_effect {
         
         System.out.print("Save the image as : ");
         String name = in.nextLine();
-        if (!name.endsWith(".jpg") && !name.endsWith(".png")) {
+        if (!name.endsWith(".jpg")) {
             name += ".jpg";
         }
 
